@@ -1,0 +1,46 @@
+@startuml use_cases
+left to right direction
+actor User
+usecase Register
+User --> Register
+usecase Login
+User --> Login
+usecase Logout
+User --> Logout
+usecase cElement as "Add Member"
+User --> cElement
+usecase mElement as "Modify Member"
+User --> mElement
+usecase dElement as "Delete Member"
+User --> dElement
+usecase oElement as "Open Member"
+User --> oElement
+usecase clElement as "Close Member"
+User --> clElement
+usecase addDeveloper as "Add User"
+User --> addDeveloper
+usecase dDeveloper as "Delete User"
+User --> dDeveloper
+usecase mDeveloper as "Modify User"
+User --> mDeveloper
+@enduml
+
+@startuml context
+state INITIAL
+state LOGGED
+state ON_MEMBER
+state ON_MEMBER
+
+[*] --> INITIAL
+INITIAL --> LOGGED: Register
+INITIAL --> LOGGED: Login
+LOGGED --> INITIAL: Logout
+LOGGED --> LOGGED: Delete Member
+LOGGED --> ON_MEMBER: Add Member
+LOGGED --> ON_MEMBER: Open Member
+ON_MEMBER --> LOGGED: Close Member
+ON_MEMBER --> INITIAL: Logout
+ON_MEMBER --> ON_MEMBER: Add, Delete, Modify User
+ON_MEMBER --> ON_MEMBER: Add, Delete, Modify Member
+ON_MEMBER --> ON_MEMBER: Open, Close Member
+@enduml

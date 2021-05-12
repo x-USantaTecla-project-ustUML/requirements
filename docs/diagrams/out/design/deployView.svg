@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="371px" preserveAspectRatio="none" style="width:404px;height:371px;background:#FFFFFF;" version="1.1" viewBox="0 0 404 371" width="404px" zoomAndPan="magnify"><defs><filter height="300%" id="f1r1aztm9i4lri" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[aa2f05b2676d7d34ffa7e771fb7634f3]
+cluster client--><polygon fill="#FFFFFF" filter="url(#f1r1aztm9i4lri)" points="61,16,71,6,387,6,387,114,377,124,61,124,61,16" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="377" x2="387" y1="16" y2="6"/><line style="stroke:#000000;stroke-width:1.5;" x1="61" x2="377" y1="16" y2="16"/><line style="stroke:#000000;stroke-width:1.5;" x1="377" x2="377" y1="16" y2="124"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="46" x="197" y="31.9951">client</text><!--MD5=[a540e78612a372e5cadf164e954960e5]
+entity Angular--><rect fill="#FEFECE" filter="url(#f1r1aztm9i4lri)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="94" x="269" y="54"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="343" y="59"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="341" y="61"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="341" y="65"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="284" y="86.9951">Angular</text><!--MD5=[051575f0a514ca79769791bbdd217a32]
+entity YAMLLibrary--><rect fill="#FEFECE" filter="url(#f1r1aztm9i4lri)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="129" x="104.5" y="54"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="213.5" y="59"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="211.5" y="61"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="211.5" y="65"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="119.5" y="86.9951">YAMLLibrary</text><!--MD5=[dd82451e1dd92fe3da01853750f49ff6]
+entity server--><polygon fill="#FEFECE" filter="url(#f1r1aztm9i4lri)" points="26.5,205,36.5,195,111.5,195,111.5,231.2969,101.5,241.2969,26.5,241.2969,26.5,205" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="101.5" x2="111.5" y1="205" y2="195"/><line style="stroke:#000000;stroke-width:1.5;" x1="26.5" x2="101.5" y1="205" y2="205"/><line style="stroke:#000000;stroke-width:1.5;" x1="101.5" x2="101.5" y1="205" y2="241.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="41.5" y="227.9951">server</text><!--MD5=[f50ff5e4cd64f259303fc83dba1819fc]
+entity database--><polygon fill="#FEFECE" filter="url(#f1r1aztm9i4lri)" points="16,328,26,318,122,318,122,354.2969,112,364.2969,16,364.2969,16,328" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="112" x2="122" y1="328" y2="318"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="112" y1="328" y2="328"/><line style="stroke:#000000;stroke-width:1.5;" x1="112" x2="112" y1="328" y2="364.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="31" y="350.9951">database</text><!--MD5=[6e668341980b2b6f3174a2b130bbe9df]
+link client to server--><path d="M69,124.4601 C69,124.8378 69,125.2164 69,125.5961 C69,126.3553 69,127.1185 69,127.8851 C69,129.4183 69,130.9654 69,132.523 C69,135.6382 69,138.7956 69,141.9685 C69,148.3142 69,154.7218 69,160.9779 C69,173.4901 69,185.3963 69,194.989 " fill="none" id="client-server" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="70" y="161.0669">http</text><!--MD5=[159ab89cb9974f6adccb009df31e100d]
+link server to database--><path d="M69,241.193 C69,263.026 69,296.1639 69,317.9474 " fill="none" id="server-database" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="19" x="70" y="284.0669">jpa</text><!--MD5=[6b7c597f3e94ebdb2c5ef006389f8a07]
+@startuml
+node client { 
+    component Angular
+    component YAMLLibrary
+}
+
+node server
+node database
+
+client - - server: http
+server - - database: jpa
+@enduml
+
+PlantUML version 1.2021.6beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

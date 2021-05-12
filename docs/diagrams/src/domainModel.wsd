@@ -1,0 +1,76 @@
+@startuml domainModel
+Class UST_UML
+Class User
+Class Project
+Class Visbility
+Class Package
+abstract Member
+Class Class
+Class Actor
+Class UseCase
+Class State
+Class Object
+Class Component
+Class Node
+Class Activity
+Class Enum
+Class Interface
+Class Definition
+Class Attribute
+Class Method
+Class Type
+Class Modifier
+Class Relation
+Class Composition
+Class Association
+Class Agregation
+Class Use
+Class Base
+Class EnumObject
+Class Privilege
+Class Public
+Class Private
+Class PackagePrivate
+Class Abstract
+Class Final
+Class Static
+
+UST_UML *-down-> "0..n" User
+User "1..n" *-down-> "0..n" Project
+(User, Project) .. Privilege
+Package <|-down- Project 
+Member <|-down- Package 
+Package *-up-> "0..n" Member
+Member <|-down- Class 
+Member <|-down- Actor 
+Member <|-down- UseCase 
+Member <|-down- State 
+Member <|-down- Object 
+Member <|-down- Component 
+Member <|-down- Node 
+Member <|-down- Activity 
+Class <|-down- Enum 
+Class <|-down- Interface
+Member "1..2" *-down-> "0..n" Relation 
+Class *-down-> "0..n" Definition
+Definition <|-down- Attribute 
+Definition <|-down- Method
+Definition <|-down- EnumObject
+Definition *-down-> Type 
+Definition *-down-> "1..3" Modifier
+Class *-down-> "1..2" Modifier
+Project *-down-> Visbility
+Relation <|-down- Composition 
+Relation <|-down- Association 
+Relation <|-down- Agregation 
+Relation <|-down- Use 
+Relation <|-down- Base 
+Use <|-down- Extend 
+Use <|-down- Include
+Modifier <|-down- Public
+Modifier <|-down- Private
+Modifier <|-down- PackagePrivate
+Modifier <|-down- Abstract
+Modifier <|-down- Final
+Modifier <|-down- Static
+@enduml

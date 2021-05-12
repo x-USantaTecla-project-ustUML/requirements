@@ -1,0 +1,288 @@
+@startuml analisis
+package views {
+    class UserView
+    class CommandView
+    class PackageView
+    class DiagramView
+    class RepositoryView
+}
+
+UserView *-down-> PackageView
+UserView *-down-> CommandView
+UserView *-down-> DiagramView
+UserView *-down-> RepositoryView
+
+package controllers {
+    class AddMemberController
+    class AddRelationController
+    enum Error
+}
+
+
+
+package models {
+    abstract Member
+    class Package
+    class Class
+    class Definition
+    class Attribute
+    class Method
+    enum Modifier{
+        +ABSTRACT
+        +FINAL
+        +STATIC
+    }
+    abstract Relation
+    class Composition
+    class Use
+}
+
+Member <|-down- Class
+Member <|-down- Package
+Package *-up-> "0..n" Member
+Class *-down-> "0..n" Attribute
+Class *-down-> "0..n" Method
+Definition <|-down- Method
+Definition <|-down- Attribute
+Class *-down-> "1..2" Modifier
+Definition *-down-> "1..3" Modifier
+Member *-down-> "0..n" Relation
+Relation -down-> Member
+Relation <|-down- Composition
+Relation <|-down- Use
+AddMemberController .down.> Error
+AddRelationController .down.> Error
+
+views .down.> controllers
+controllers .down.> models
+@enduml
+
+@startuml analisis_add_relation
+allow_mixing
+
+actor User
+
+package views {
+    object CommandView
+    object PackageView
+    object DiagramView
+}
+
+User -down-> CommandView
+note on link
+execute(string)
+end note
+
+package controllers {
+    object AddRelationController
+}
+
+CommandView .down.> AddRelationController
+note on link
+add(string): Error
+end note
+
+package models {
+    object Member
+    object Package
+    object "class\n:Class" as Class 
+    object Attribute
+    object Method
+    object "relation\n:Composition" as Composition
+    object "relation\n:Use" as Use
+    object Relation
+}
+AddRelationController .down.> Composition
+note on link
+new(member)
+set(cardinality)
+set(role)
+end note
+AddRelationController .down.> Use
+note on link
+new(member)
+set(cardinality)
+set(role)
+end note
+
+Package *-down-> "0..n" Member
+note on link
+isName(string): boolean
+add(relation)
+getUSTUML(): String
+getPlantUML(): String
+end note
+
+AddRelationController .down.> Attribute
+note on link
+new(name, type)
+set(modifiers)
+end note
+AddRelationController .down.> Method
+note on link
+new(name)
+set(modifiers)
+set(type)
+end note
+AddRelationController .down.> Class
+note on link
+new(name)
+set(modifiers)
+set(attributes)
+set(methods)
+end note
+AddRelationController -down-> Package
+note on link
+get(string): Class
+add(Class, relation)
+getUSTUML(): String
+getPlantUML(): String
+end note
+
+PackageView .down.> AddRelationController
+note on link
+getUSTUML(): String
+end note
+
+DiagramView .down.> AddRelationController
+note on link
+getPlantUML(): String
+end note
+
+Member <|-down- Class
+
+Class *-down-> Method
+note on link
+getUSTUML(): String
+getPlantUML(): String
+end note
+Class *-down-> Attribute
+note on link
+getUSTUML(): String
+getPlantUML(): String
+end note
+
+Member *-down-> Relation
+note on link
+getUSTUML(): String
+getPlantUML(): String
+end note
+
+Relation <|-down- Use
+Relation <|-down- Composition
+@enduml
+
+@startuml analisis_add_member
+allow_mixing
+
+actor User
+
+package views {
+    object CommandView
+    object PackageView
+    object DiagramView
+}
+
+User -down-> CommandView
+note on link
+execute(string)
+end note
+
+package controllers {
+    object AddMemberController
+}
+
+CommandView .down.> AddMemberController
+note on link
+add(string): Error
+end note
+
+package models {
+    object Member
+    object Package
+    object "class\n:Class" as Class 
+    object Attribute
+    object Method
+    object "relation\n:Composition" as Composition
+    object "relation\n:Use" as Use
+    object Relation
+}
+AddMemberController .down.> Composition
+note on link
+new(member)
+set(cardinality)
+set(role)
+end note
+AddMemberController .down.> Use
+note on link
+new(member)
+set(cardinality)
+set(role)
+end note
+
+Package *-down-> "0..n" Member
+note on link
+isName(string): boolean
+add(relation)
+getUSTUML(): String
+getPlantUML(): String
+end note
+
+AddMemberController .down.> Attribute
+note on link
+new(name, type)
+set(modifiers)
+end note
+AddMemberController .down.> Method
+note on link
+new(name)
+set(modifiers)
+set(type)
+end note
+AddMemberController .down.> Class
+note on link
+new(name)
+set(modifiers)
+set(attributes)
+set(methods)
+end note
+AddMemberController -down-> Package
+note on link
+get(string): Class
+add(Class, relation)
+getUSTUML(): String
+getPlantUML(): String
+end note
+
+PackageView .down.> AddMemberController
+note on link
+getUSTUML(): String
+end note
+
+DiagramView .down.> AddMemberController
+note on link
+getPlantUML(): String
+end note
+
+Member <|-down- Class
+
+Class *-down-> Method
+note on link
+getUSTUML(): String
+getPlantUML(): String
+end note
+Class *-down-> Attribute
+note on link
+getUSTUML(): String
+getPlantUML(): String
+end note
+
+Member *-down-> Relation
+note on link
+getUSTUML(): String
+getPlantUML(): String
+end note
+
+Relation <|-down- Use
+Relation <|-down- Composition
+@enduml

@@ -1,0 +1,73 @@
+@startuml deployView
+
+node client { 
+    component Angular
+    component YAMLLibrary
+}
+
+node server
+node database
+
+client -- server: http
+server -- database: jpa
+@enduml
+
+@startuml usecase_design
+package frontend <<angular:11>>{
+    boundary XTemplate <<HTML>>
+    boundary XComponent <<TypeScript>>
+    boundary XStyle <<CSS>>
+    control XService <<TypeScript>>
+    entity HTTPService
+    entity XDto <<java>>
+}
+XComponent --left-> XTemplate
+XTemplate --down-> XStyle
+XComponent --down-> XService
+XComponent --down-> XDto
+XService o--down- HTTPService
+XService --down-> XDto
+
+package analysis{
+    boundary XView
+    control XController
+    entity XModel 
+}
+
+XView -down-> XController
+XView -down-> XModel
+XController -down-> XModel
+
+package backend <<spring-boot:2.4.5>>{
+    control "XService - java" as XServiceJava
+    control "XResource - java" as XResourceJava
+    entity "XRepository - java" as XRepositoryJava
+    entity "XEntity - java" as XEntityJava
+    entity "XDto - java" as XDtoJava
+    entity "XModel - java" as XModelJava
+}
+
+XServiceJava --down-> XRepositoryJava
+XServiceJava --down-> XModelJava
+XRepositoryJava --down-> XEntityJava
+XRepositoryJava --down-> XModelJava
+XResourceJava --down-> XDtoJava
+XResourceJava --down-> XServiceJava
+XResourceJava --down-> XModelJava
+XDtoJava --down-> XModelJava
+XEntityJava --down-> XModelJava
+
+XComponent ...up.> XView : <<trace>>
+XTemplate ...up.> XView : <<trace>>
+XStyle ...up.> XView : <<trace>>
+XService ...up.> XController : <<trace>>
+XDto ...up.> XModel : <<trace>>
+XDto ...down.> XDtoJava : <<trace>>
+XRepositoryJava ...up.> XModel : <<trace>>
+XResourceJava ...up.>  XModel : <<trace>>
+XServiceJava ...up.>  XModel : <<trace>>
+XDtoJava ...up.>  XModel : <<trace>>
+XEntityJava ...up.>  XModel : <<trace>>
+XService ...down.>  XResourceJava : <<trace>>
+XModelJava ...up.>  XModel : <<trace>>
+@enduml

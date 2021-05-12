@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1156px" preserveAspectRatio="none" style="width:1198px;height:1156px;background:#FFFFFF;" version="1.1" viewBox="0 0 1198 1156" width="1198px" zoomAndPan="magnify"><defs><filter height="300%" id="f1r50ghjmsfqbd" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[e2a75efa8a0f57c2afae8bf75386f79c]
+cluster views--><polygon fill="#FFFFFF" filter="url(#f1r50ghjmsfqbd)" points="354,170.5,405,170.5,412,192.7969,746,192.7969,746,255.5,354,255.5,354,170.5" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="354" x2="412" y1="192.7969" y2="192.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="45" x="358" y="185.4951">views</text><!--MD5=[f4e70ef68289585296b9045165e58692]
+cluster controllers--><polygon fill="#FFFFFF" filter="url(#f1r50ghjmsfqbd)" points="467,326.5,562,326.5,569,348.7969,643,348.7969,643,411.5,467,411.5,467,326.5" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="467" x2="569" y1="348.7969" y2="348.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="89" x="471" y="341.4951">controllers</text><!--MD5=[a60570e4b426f702ccbb0d459e3b9417]
+cluster models--><polygon fill="#FFFFFF" filter="url(#f1r50ghjmsfqbd)" points="16,527.5,80,527.5,87,549.7969,477,549.7969,477,1149.5,16,1149.5,16,527.5" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="87" y1="549.7969" y2="549.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="58" x="20" y="542.4951">models</text><rect fill="#FEFECE" filter="url(#f1r50ghjmsfqbd)" height="33.9688" style="stroke:#A80036;stroke-width:1.5;" width="103" x="370.5" y="205.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="89" x="377.5" y="218.6387">CommandView</text><line style="stroke:#A80036;stroke-width:1.5;" x1="371.5" x2="472.5" y1="223.4688" y2="223.4688"/><rect fill="#FEFECE" filter="url(#f1r50ghjmsfqbd)" height="33.9688" style="stroke:#A80036;stroke-width:1.5;" width="93" x="508.5" y="205.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="79" x="515.5" y="218.6387">PackageView</text><line style="stroke:#A80036;stroke-width:1.5;" x1="509.5" x2="600.5" y1="223.4688" y2="223.4688"/><rect fill="#FEFECE" filter="url(#f1r50ghjmsfqbd)" height="33.9688" style="stroke:#A80036;stroke-width:1.5;" width="93" x="636.5" y="205.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="79" x="643.5" y="218.6387">DiagramView</text><line style="stroke:#A80036;stroke-width:1.5;" x1="637.5" x2="728.5" y1="223.4688" y2="223.4688"/><rect fill="#FEFECE" filter="url(#f1r50ghjmsfqbd)" height="33.9688" style="stroke:#A80036;stroke-width:1.5;" width="144" x="483" y="361.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="130" x="490" y="374.6387">AddRelationController</text><line style="stroke:#A80036;stroke-width:1.5;" x1="484" x2="626" y1="379.4688" y2="379.4688"/><rect fill="#FEFECE" filter="url(#f1r50ghjmsfqbd)" height="33.9688" style="stroke:#A80036;stroke-width:1.5;" width="64" x="44" y="758"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="50" x="51" y="771.1387">Member</text><line style="stroke:#A80036;stroke-width:1.5;" x1="45" x2="107" y1="775.9688" y2="775.9688"/><rect fill="#FEFECE" filter="url(#f1r50ghjmsfqbd)" height="33.9688" style="stroke:#A80036;stroke-width:1.5;" width="64" x="53" y="562.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="50" x="60" y="575.6387">Package</text><line style="stroke:#A80036;stroke-width:1.5;" x1="54" x2="116" y1="580.4688" y2="580.4688"/><rect fill="#FEFECE" filter="url(#f1r50ghjmsfqbd)" height="47.9375" style="stroke:#A80036;stroke-width:1.5;" width="50" x="253" y="923.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="31" x="262.5" y="936.6387">class</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="36" x="260" y="950.6074">:Class</text><line style="stroke:#A80036;stroke-width:1.5;" x1="254" x2="302" y1="955.4375" y2="955.4375"/><rect fill="#FEFECE" filter="url(#f1r50ghjmsfqbd)" height="33.9688" style="stroke:#A80036;stroke-width:1.5;" width="65" x="295.5" y="1092.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="51" x="302.5" y="1105.6387">Attribute</text><line style="stroke:#A80036;stroke-width:1.5;" x1="296.5" x2="359.5" y1="1110.4688" y2="1110.4688"/><rect fill="#FEFECE" filter="url(#f1r50ghjmsfqbd)" height="33.9688" style="stroke:#A80036;stroke-width:1.5;" width="59" x="398.5" y="1092.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="45" x="405.5" y="1105.6387">Method</text><line style="stroke:#A80036;stroke-width:1.5;" x1="399.5" x2="456.5" y1="1110.4688" y2="1110.4688"/><rect fill="#FEFECE" filter="url(#f1r50ghjmsfqbd)" height="47.9375" style="stroke:#A80036;stroke-width:1.5;" width="93" x="55.5" y="1085.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="45" x="79.5" y="1098.6387">relation</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="79" x="62.5" y="1112.6074">:Composition</text><line style="stroke:#A80036;stroke-width:1.5;" x1="56.5" x2="147.5" y1="1117.4375" y2="1117.4375"/><rect fill="#FEFECE" filter="url(#f1r50ghjmsfqbd)" height="47.9375" style="stroke:#A80036;stroke-width:1.5;" width="59" x="195.5" y="1085.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="45" x="202.5" y="1098.6387">relation</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="28" x="211" y="1112.6074">:Use</text><line style="stroke:#A80036;stroke-width:1.5;" x1="196.5" x2="253.5" y1="1117.4375" y2="1117.4375"/><rect fill="#FEFECE" filter="url(#f1r50ghjmsfqbd)" height="33.9688" style="stroke:#A80036;stroke-width:1.5;" width="61" x="32.5" y="930.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="47" x="39.5" y="943.6387">Relation</text><line style="stroke:#A80036;stroke-width:1.5;" x1="33.5" x2="92.5" y1="948.4688" y2="948.4688"/><!--MD5=[fee662a292a0353a69bd162820bae93b]
+entity User--><ellipse cx="422" cy="14" fill="#FEFECE" filter="url(#f1r50ghjmsfqbd)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M422,22 L422,49 M409,30 L435,30 M422,49 L409,64 M422,49 L435,64 " fill="none" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="406.5" y="82.4951">User</text><!--MD5=[6a4ad149ab99ec75f9ec6c89dc157d80]
+link User to CommandView--><path codeLine="11" d="M422,85.82 C422,121.43 422,172.226 422,200.482 " fill="none" id="User-to-CommandView" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="422,205.487,426,196.487,422,200.487,418,196.487,422,205.487" style="stroke:#A80036;stroke-width:1.0;"/><path d="M427,120.5 L427,145.5 L546,145.5 L546,130.5 L536,120.5 L427,120.5 " fill="#FBFB77" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M536,120.5 L536,130.5 L546,130.5 L536,120.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="98" x="433" y="137.5669">execute(string)</text><!--MD5=[fe7fc6128f6e8a2ea82128b2685c982d]
+link CommandView to AddRelationController--><path codeLine="20" d="M410.596,239.504 C398.978,257.964 384.56,288.583 399,310.5 C416.856,337.602 448.211,353.785 478.15,363.428 " fill="none" id="CommandView-to-AddRelationController" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="482.941,364.92,475.5378,358.4244,478.1672,363.433,473.1586,366.0624,482.941,364.92" style="stroke:#A80036;stroke-width:1.0;"/><path d="M404,276.5 L404,301.5 L535,301.5 L535,286.5 L525,276.5 L404,276.5 " fill="#FBFB77" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M525,276.5 L525,286.5 L535,286.5 L525,276.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="410" y="293.5669">add(string): Error</text><!--MD5=[5ae079c07d5e5ffd8658a4fc6ca78ab5]
+link AddRelationController to Composition--><path codeLine="35" d="M550.936,395.559 C538.352,445.982 499.812,605.795 482,740.5 C463.611,879.571 559.098,954.253 462,1055.5 C418.074,1101.3034 240.203,1072.9196 178,1085.5 C170.055,1087.1068 161.751,1089.1887 153.672,1091.4429 " fill="none" id="AddRelationController-to-Composition" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="148.675,1092.8659,158.4266,1094.2469,153.4837,1091.4959,156.2346,1086.553,148.675,1092.8659" style="stroke:#A80036;stroke-width:1.0;"/><path d="M487,745.5 L487,800.5 L604,800.5 L604,755.5 L594,745.5 L487,745.5 " fill="#FBFB77" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M594,745.5 L594,755.5 L604,755.5 L594,745.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="92" x="493" y="762.5669">new(member)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="96" x="493" y="777.6997">set(cardinality)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="493" y="792.8325">set(role)</text><!--MD5=[8d9712c5b52a26b60b38016333043fb5]
+link AddRelationController to Use--><path codeLine="41" d="M569.903,395.637 C597.998,427.811 656,503.337 656,578.5 C656,578.5 656,578.5 656,948.5 C656,1127.1938 450.267,1038.006 278,1085.5 C271.956,1087.1662 265.705,1089.3897 259.707,1091.7992 " fill="none" id="AddRelationController-to-Use" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="254.738,1093.8586,264.5838,1094.1054,259.3565,1091.943,261.5189,1086.7158,254.738,1093.8586" style="stroke:#A80036;stroke-width:1.0;"/><path d="M661,745.5 L661,800.5 L778,800.5 L778,755.5 L768,745.5 L661,745.5 " fill="#FBFB77" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M768,745.5 L768,755.5 L778,755.5 L768,745.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="92" x="667" y="762.5669">new(member)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="96" x="667" y="777.6997">set(cardinality)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="667" y="792.8325">set(role)</text><!--MD5=[a63aaf0ab36d9a1b54b606927a032b23]
+link Package to Member--><path codeLine="48" d="M76.5195,608.4964 C76.5195,608.4964 73.7007,621.038 73,626.5 C67.7625,667.326 70.2828,715.02 72.885,744.871 " fill="none" id="Package-Member" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="74.1354,757.984,77.2628,748.6449,73.6607,753.0066,69.299,749.4044,74.1354,757.984" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="73.6607" x2="72.9013" y1="753.0066" y2="745.042"/><polygon fill="#A80036" points="79.6316,596.907,74.2124,601.6643,76.5195,608.4964,81.9387,603.7391,79.6316,596.907" style="stroke:#A80036;stroke-width:1.0;"/><path d="M78,631.5 L78,701.5 L253,701.5 L253,641.5 L243,631.5 L78,631.5 " fill="#FBFB77" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M243,631.5 L243,641.5 L253,641.5 L243,631.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="154" x="84" y="648.5669">isName(string): boolean</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="84" y="663.6997">add(relation)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="84" y="678.8325">getUSTUML(): String</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="84" y="693.9653">getPlantUML(): String</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="45.5428" y="746.9571">0..n</text><!--MD5=[5862c5e5319bb91ac490c14768027955]
+link AddRelationController to Attribute--><path codeLine="56" d="M627.337,393.85 C716.681,416.274 857,468.932 857,578.5 C857,578.5 857,578.5 857,948.5 C857,1039.664 768.419,1026.472 682,1055.5 C554.557,1098.3083 511.114,1051.668 381,1085.5 C375.797,1086.8528 370.45,1088.6472 365.247,1090.6391 " fill="none" id="AddRelationController-to-Attribute" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="360.517,1092.5168,370.3578,1092.9148,365.1644,1090.6724,367.4068,1085.479,360.517,1092.5168" style="stroke:#A80036;stroke-width:1.0;"/><path d="M862,753 L862,793 L994,793 L994,763 L984,753 L862,753 " fill="#FBFB77" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M984,753 L984,763 L994,763 L984,753 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="868" y="770.0669">new(name, type)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="868" y="785.1997">set(modifiers)</text><!--MD5=[30dcd5f51c1565ea9eb8a46e78d55e16]
+link AddRelationController to Method--><path codeLine="61" d="M627.015,379.383 C695.499,381.692 800.077,391.615 883,427.5 C981.993,470.339 1073,470.635 1073,578.5 C1073,578.5 1073,578.5 1073,948.5 C1073,1075.3654 596.988,1102.3385 462.82,1107.4214 " fill="none" id="AddRelationController-to-Method" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="457.816,1107.6068,466.9573,1111.2724,462.8126,1107.4225,466.6625,1103.2778,457.816,1107.6068" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1078,745.5 L1078,800.5 L1189,800.5 L1189,755.5 L1179,745.5 L1078,745.5 " fill="#FBFB77" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1179,745.5 L1179,755.5 L1189,755.5 L1179,745.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74" x="1084" y="762.5669">new(name)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="1084" y="777.6997">set(modifiers)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="1084" y="792.8325">set(type)</text><!--MD5=[f3a9553060f00431c8a91df8c8177f45]
+link AddRelationController to Class--><path codeLine="67" d="M489.613,395.57 C468.731,402.906 446.517,413.237 429,427.5 C347.639,493.748 335.148,526.953 302,626.5 C267.727,729.425 271.706,860.91 275.576,917.962 " fill="none" id="AddRelationController-to-Class" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="275.948,923.247,279.3028,913.9871,275.5951,918.2595,271.3228,914.5518,275.948,923.247" style="stroke:#A80036;stroke-width:1.0;"/><path d="M307,631.5 L307,701.5 L420,701.5 L420,641.5 L410,631.5 L307,631.5 " fill="#FBFB77" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M410,631.5 L410,641.5 L420,641.5 L410,631.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74" x="313" y="648.5669">new(name)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="313" y="663.6997">set(modifiers)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="92" x="313" y="678.8325">set(attributes)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="87" x="313" y="693.9653">set(methods)</text><!--MD5=[f72fc27d4dcdc3b40af909c7e23ffa2d]
+link AddRelationController to Package--><path codeLine="74" d="M482.927,382.522 C363.623,388.214 135.526,402.279 109,427.5 C73.5758,461.182 76.6965,524.54 81.2389,557.452 " fill="none" id="AddRelationController-to-Package" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="81.9744,562.463,84.6257,552.9777,81.2487,557.5159,76.7105,554.1389,81.9744,562.463" style="stroke:#A80036;stroke-width:1.0;"/><path d="M114,432.5 L114,502.5 L270,502.5 L270,442.5 L260,432.5 L114,432.5 " fill="#FBFB77" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M260,432.5 L260,442.5 L270,442.5 L260,432.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="120" y="449.5669">get(string): Class</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="120" y="464.6997">add(Class, relation)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="120" y="479.8325">getUSTUML(): String</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="120" y="494.9653">getPlantUML(): String</text><!--MD5=[93f88726e439baa2c0d8477ef8a63085]
+link PackageView to AddRelationController--><path codeLine="82" d="M553.719,239.928 C553.06,249.192 552.328,260.985 552,271.5 C551.084,300.847 552.473,334.768 553.652,356.175 " fill="none" id="PackageView-to-AddRelationController" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="553.945,361.337,557.4268,352.1241,553.6607,356.3451,549.4397,352.579,553.945,361.337" style="stroke:#A80036;stroke-width:1.0;"/><path d="M557,276.5 L557,301.5 L706,301.5 L706,286.5 L696,276.5 L557,276.5 " fill="#FBFB77" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M696,276.5 L696,286.5 L706,286.5 L696,276.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="563" y="293.5669">getUSTUML(): String</text><!--MD5=[9c87ac184506f1cc23f782621e596dd6]
+link DiagramView to AddRelationController--><path codeLine="87" d="M698.547,239.518 C714.264,257.721 734.221,287.839 719,310.5 C699.466,339.582 664.847,356.049 632.434,365.369 " fill="none" id="DiagramView-to-AddRelationController" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="627.253,366.804,636.9941,368.2572,632.0717,365.4697,634.8592,360.5473,627.253,366.804" style="stroke:#A80036;stroke-width:1.0;"/><path d="M730,276.5 L730,301.5 L886,301.5 L886,286.5 L876,276.5 L730,276.5 " fill="#FBFB77" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M876,276.5 L876,286.5 L886,286.5 L876,276.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="736" y="293.5669">getPlantUML(): String</text><!--MD5=[f47290a6757b8f085894cdaa33540e6d]
+reverse link Member to Class--><path codeLine="92" d="M128.037,782.007 C166.934,789.217 218.606,805.008 250,839.5 C270.939,862.505 276.589,899.243 277.916,923.12 " fill="none" id="Member-backto-Class" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="126.877,788.911,108.224,778.857,129.075,775.085,126.877,788.911" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a8e4b54cf7ab76a62f88d8b4dd9c7c1d]
+link Class to Method--><path codeLine="94" d="M308.0182,980.5195 C308.0182,980.5195 378.181,1055.36 403.924,1082.8186 " fill="none" id="Class-Method" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="412.989,1092.4884,409.7518,1083.1868,409.5693,1088.8407,403.9154,1088.6582,412.989,1092.4884" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="409.5693" x2="404.0975" y1="1088.8407" y2="1083.0044"/><polygon fill="#A80036" points="299.811,971.765,300.9965,978.878,308.0182,980.5195,306.8328,973.4065,299.811,971.765" style="stroke:#A80036;stroke-width:1.0;"/><path d="M381,1006.5 L381,1046.5 L537,1046.5 L537,1016.5 L527,1006.5 L381,1006.5 " fill="#FBFB77" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M527,1006.5 L527,1016.5 L537,1016.5 L527,1006.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="387" y="1023.5669">getUSTUML(): String</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="387" y="1038.6997">getPlantUML(): String</text><!--MD5=[7507684d658538f0b7f5c7200993d625]
+link Class to Attribute--><path codeLine="99" d="M241.0857,952.9326 C241.0857,952.9326 97.6066,976.021 78,1001.5 C63.3635,1020.52 62.3799,1037.279 78,1055.5 C106.392,1088.6198 229.975,1073.7984 272,1085.5 C275.607,1086.5044 279.295,1087.6746 282.971,1088.9451 " fill="none" id="Class-Attribute" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="295.289,1093.5556,288.2623,1086.6545,290.6063,1091.8029,285.4579,1094.1468,295.289,1093.5556" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="290.6063" x2="283.114" y1="1091.8029" y2="1088.9987"/><polygon fill="#A80036" points="252.983,951.366,246.5121,948.1835,241.0857,952.9326,247.5566,956.1151,252.983,951.366" style="stroke:#A80036;stroke-width:1.0;"/><path d="M83,1006.5 L83,1046.5 L239,1046.5 L239,1016.5 L229,1006.5 L83,1006.5 " fill="#FBFB77" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M229,1006.5 L229,1016.5 L239,1016.5 L229,1006.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="89" y="1023.5669">getUSTUML(): String</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="89" y="1038.6997">getPlantUML(): String</text><!--MD5=[c431c88d3b3da536555b00649ca60643]
+link Member to Relation--><path codeLine="105" d="M73.8645,804.0053 C73.8645,804.0053 67.6133,885.995 65.2206,917.376 " fill="none" id="Member-Relation" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="64.2292,930.378,68.902,921.7082,64.6094,925.3925,60.9252,921.0999,64.2292,930.378" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="64.6094" x2="65.2176" y1="925.3925" y2="917.416"/><polygon fill="#A80036" points="74.777,792.04,70.3323,797.7185,73.8645,804.0053,78.3092,798.3268,74.777,792.04" style="stroke:#A80036;stroke-width:1.0;"/><path d="M77,844.5 L77,884.5 L233,884.5 L233,854.5 L223,844.5 L77,844.5 " fill="#FBFB77" filter="url(#f1r50ghjmsfqbd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M223,844.5 L223,854.5 L233,854.5 L223,844.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="83" y="861.5669">getUSTUML(): String</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="83" y="876.6997">getPlantUML(): String</text><!--MD5=[f560e3701e68eb886d2a798919f208f3]
+reverse link Relation to Use--><path codeLine="111" d="M51.0777,983.887 C45.7986,1006.565 43.7652,1035.406 59,1055.5 C88.8394,1094.8563 119.157,1069.8451 166,1085.5 C175.697,1088.7408 186.135,1092.6623 195.496,1096.3423 " fill="none" id="Relation-backto-Use" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="44.3971,981.79,56.6758,964.521,57.8465,985.678,44.3971,981.79" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[aac130c8b5f905729b18e85e231f7b50]
+reverse link Relation to Composition--><path codeLine="112" d="M43.8182,982.819 C34.405,1004.43 27.1785,1032.488 38,1055.5 C43.5253,1067.2495 53.0757,1077.2882 63.1383,1085.3669 " fill="none" id="Relation-backto-Composition" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="37.6212,979.561,52.8085,964.784,50.1507,985.806,37.6212,979.561" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c54ec9c39812b7ec6c6b3a0724b17bba]
+@startuml
+allow_mixing
+
+actor User
+
+package views {
+    object CommandView
+    object PackageView
+    object DiagramView
+}
+
+User -down-> CommandView
+note on link
+execute(string)
+end note
+
+package controllers {
+    object AddRelationController
+}
+
+CommandView .down.> AddRelationController
+note on link
+add(string): Error
+end note
+
+package models {
+    object Member
+    object Package
+    object "class\n:Class" as Class 
+    object Attribute
+    object Method
+    object "relation\n:Composition" as Composition
+    object "relation\n:Use" as Use
+    object Relation
+}
+AddRelationController .down.> Composition
+note on link
+new(member)
+set(cardinality)
+set(role)
+end note
+AddRelationController .down.> Use
+note on link
+new(member)
+set(cardinality)
+set(role)
+end note
+
+Package *-down-> "0..n" Member
+note on link
+isName(string): boolean
+add(relation)
+getUSTUML(): String
+getPlantUML(): String
+end note
+
+AddRelationController .down.> Attribute
+note on link
+new(name, type)
+set(modifiers)
+end note
+AddRelationController .down.> Method
+note on link
+new(name)
+set(modifiers)
+set(type)
+end note
+AddRelationController .down.> Class
+note on link
+new(name)
+set(modifiers)
+set(attributes)
+set(methods)
+end note
+AddRelationController -down-> Package
+note on link
+get(string): Class
+add(Class, relation)
+getUSTUML(): String
+getPlantUML(): String
+end note
+
+PackageView .down.> AddRelationController
+note on link
+getUSTUML(): String
+end note
+
+DiagramView .down.> AddRelationController
+note on link
+getPlantUML(): String
+end note
+
+Member <|-down- Class
+
+Class *-down-> Method
+note on link
+getUSTUML(): String
+getPlantUML(): String
+end note
+Class *-down-> Attribute
+note on link
+getUSTUML(): String
+getPlantUML(): String
+end note
+
+Member *-down-> Relation
+note on link
+getUSTUML(): String
+getPlantUML(): String
+end note
+
+Relation <|-down- Use
+Relation <|-down- Composition
+@enduml
+
+PlantUML version 1.2021.6beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
