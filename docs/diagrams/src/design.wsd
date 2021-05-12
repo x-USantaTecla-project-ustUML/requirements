@@ -2,14 +2,18 @@
 
 node client { 
     component Angular
-    component YAMLLibrary
 }
 
-node server
-node database
+node server {
+    component Spring
+}
 
-client -- server: http
-server -- database: jpa
+node database {
+    component MongoDB
+}
+
+client -down- server: http
+server -down- database: mongoDB
 @enduml
 
 @startuml usecase_design

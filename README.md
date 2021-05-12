@@ -5,16 +5,28 @@ Universo Santa Tecla
 **Índice**  
 
 1. [Modelo del dominio](#modelo-del-dominio)  
-   1.1. [Lenguaje](#lenguaje)
+   1.1. [Lenguaje](#lenguaje)  
+      1.1.1. [Sintaxis](#sintaxis)  
+      1.1.2. [Ejemplos Comandos](#ejemplos-comandos)  
 2. [Requisitos](#requisitos)  
+   2.1. [Actores y casos de uso](#actores-y-casos-de-uso)  
+   2.2. [Contexto](#contexto)  
+   2.3. [Prototipo de Interfaz](#prototipo-de-interfaz)  
 3. [Analisis](#analisis)  
-4. [Diseño](#diseño)
+   3.1. [Casos de uso](#casos-de-uso)  
+      3.1.1. [Add Member](#add-member)  
+      3.1.2. [Add Relation](#add-relation)  
+4. [Diseño](#diseño)  
+   4.1. [Vista de Despliegue](#vista-de-despliegue)  
+   4.2. [Vista de Participantes](#vista-de-participantes)  
 
 ## Modelo del dominio  
   
 ![Modelo del dominio](docs/diagrams/out/domainModel/domainModel.svg)  
 
 ### Lenguaje  
+
+#### Sintaxis  
 * * *
 <a name="UST_UML">UST_UML:</a>
 
@@ -53,7 +65,7 @@ referenced by:
 referenced by:
 
 *   [class](#class "class")
-*   [definition](#definition "definition")
+*   [member](#member "member")
 *   [relations](#relations "relations")
 *   [type](#type "type")
 
@@ -67,15 +79,15 @@ referenced by:
 
 <a name="classMembers">classMembers:</a>
 
-![](docs/diagrams/out/domainModel/languageSintaxis/classMembers.png)<map name="classMembers.map"><area shape="rect" coords="157,17,235,49" href="#definition" title="definition"></map>
+![](docs/diagrams/out/domainModel/languageSintaxis/classMembers.png)<map name="classMembers.map"><area shape="rect" coords="157,17,229,49" href="#member" title="member"></map>
 
 referenced by:
 
 *   [class](#class "class")
 
-<a name="definition">definition:</a>
+<a name="member">member:</a>
 
-![](docs/diagrams/out/domainModel/languageSintaxis/definition.png)<map name="definition.map"><area shape="rect" coords="419,1,467,33" href="#type" title="type"><area shape="rect" coords="487,1,563,33" href="#identifier" title="identifier"><area shape="rect" coords="327,121,375,153" href="#type" title="type"><area shape="rect" coords="395,121,471,153" href="#identifier" title="identifier"><area shape="rect" coords="577,121,625,153" href="#type" title="type"><area shape="rect" coords="645,121,721,153" href="#identifier" title="identifier"></map>
+![](docs/diagrams/out/domainModel/languageSintaxis/member.png)<map name="member.map"><area shape="rect" coords="419,1,467,33" href="#type" title="type"><area shape="rect" coords="487,1,563,33" href="#identifier" title="identifier"><area shape="rect" coords="327,121,375,153" href="#type" title="type"><area shape="rect" coords="395,121,471,153" href="#identifier" title="identifier"><area shape="rect" coords="577,121,625,153" href="#type" title="type"><area shape="rect" coords="645,121,721,153" href="#identifier" title="identifier"></map>
 
 referenced by:
 
@@ -87,7 +99,7 @@ referenced by:
 
 referenced by:
 
-*   [definition](#definition "definition")
+*   [member](#member "member")
 
 <a name="relations">relations:</a>
 
@@ -100,18 +112,48 @@ referenced by:
 
 * * *
 
+### Ejemplos Comandos  
+*Package Context*  
+<pre>
+add:  
+   members:  
+      - class: myClass  
+      members:  
+         - member: private int attribute  
+         - member: public static method(Type param1, int param2)  
+      relations:  
+         - composition: AnotherClass  
+         - aggregation: AnotherClass2  
+    - package: myPackage  
+  relations:  
+    - use: anotherPackage  
+</pre>
+
 ## Requisitos  
 
+### Actores y Casos de uso  
 ![Casos de Uso](docs/diagrams/out/requirements/use_cases.svg)  
+
+### Contexto  
 ![Contexto](docs/diagrams/out/requirements/context.svg)  
 
-## Analisis  
+### Prototipo de interfaz  
+![Initial](docs/images/interfaz_INITIAL.png)  
+![ON_MEMBER](docs/images/interfaz_ON_MEMBER.png)  
 
-![Add Member](docs/diagrams/out/analisis/analisis_add_member.svg)  
-![Add Relation](docs/diagrams/out/analisis/analisis_add_relation.svg)  
+## Analisis  
 ![Analisis](docs/diagrams/out/analisis/analisis.svg)  
 
+### Add Member  
+![Add Member](docs/diagrams/out/analisis/analisis_add_member.svg)  
+
+### Add Relation  
+![Add Relation](docs/diagrams/out/analisis/analisis_add_relation.svg)  
+ 
 ## Diseño  
 
+### Vista de despliegue  
 ![Deploy View](docs/diagrams/out/design/deployView.svg)  
+
+### Vista de participantes 
 ![Usecase Design](docs/diagrams/out/design/usecase_design.svg)  
