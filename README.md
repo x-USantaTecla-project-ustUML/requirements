@@ -138,8 +138,8 @@ add:
 ![Contexto](docs/diagrams/out/requirements/context.svg)  
 
 ### Prototipo de interfaz  
-![Initial](docs/images/interfaz_INITIAL.png)  
-![ON_MEMBER](docs/images/interfaz_ON_MEMBER.png)  
+![Initial](docs/images/interfaz_INITIAL.PNG)  
+![ON_MEMBER](docs/images/interfaz_ON_MEMBER.PNG)  
 
 ## Analisis  
 ![Analisis](docs/diagrams/out/analisis/analisis.svg)  
