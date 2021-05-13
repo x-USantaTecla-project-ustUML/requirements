@@ -1,7 +1,7 @@
 @startuml deployView
 
 node client { 
-    component Navigator
+    component Browser
 }
 
 node server {
@@ -14,8 +14,8 @@ node database {
 }
 
 client -down- server: tcp/ip
-Navigator -down- Spring: http
-Navigator -down- Angular: http
+Browser -down- Spring: http
+Browser -down- Angular: http
 Spring -down- MongoDB: mongoDB
 @enduml
 
