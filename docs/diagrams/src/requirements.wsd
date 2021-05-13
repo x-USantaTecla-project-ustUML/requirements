@@ -17,6 +17,21 @@ usecase oElement as "Open Member"
 User --> oElement
 usecase clElement as "Close Member"
 User --> clElement
+usecase cProject as "Add Project"
+cProject -left-|> cElement
+User --> cProject
+usecase mProject as "Modify Project"
+mProject -left-|> mElement
+User --> mProject
+usecase dProject as "Delete Project"
+dProject -left-|> dElement
+User --> dProject
+usecase oProject as "Open Project"
+oProject -left-|> oElement
+User --> oProject
+usecase clProject as "Close Project"
+clProject -left-|> clElement
+User --> clProject
 usecase addDeveloper as "Add User"
 User --> addDeveloper
 usecase dDeveloper as "Delete User"
@@ -29,17 +44,17 @@ User --> mDeveloper
 state INITIAL
 state LOGGED
 state ON_MEMBER
-state ON_MEMBER
 
 [*] --> INITIAL
 INITIAL --> LOGGED: Register
 INITIAL --> LOGGED: Login
 LOGGED --> INITIAL: Logout
-LOGGED --> LOGGED: Delete Member
-LOGGED --> ON_MEMBER: Add Member
-LOGGED --> ON_MEMBER: Open Member
-ON_MEMBER --> LOGGED: Close Member
+LOGGED --> LOGGED: Delete Project
+LOGGED --> LOGGED: Add Project
+LOGGED --> ON_MEMBER: Open Project
+ON_MEMBER --> LOGGED: Close Project
 ON_MEMBER --> INITIAL: Logout
+ON_MEMBER --> ON_MEMBER: Modify Project
 ON_MEMBER --> ON_MEMBER: Add, Delete, Modify User
 ON_MEMBER --> ON_MEMBER: Add, Delete, Modify Member
 ON_MEMBER --> ON_MEMBER: Open, Close Member

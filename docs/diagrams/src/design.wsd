@@ -1,10 +1,11 @@
 @startuml deployView
 
 node client { 
-    component Angular
+    component Navigator
 }
 
 node server {
+    component Angular
     component Spring
 }
 
@@ -12,8 +13,10 @@ node database {
     component MongoDB
 }
 
-client -down- server: http
-server -down- database: mongoDB
+client -down- server: tcp/ip
+Navigator -down- Spring: http
+Navigator -down- Angular: http
+Spring -down- MongoDB: mongoDB
 @enduml
 
 @startuml usecase_design

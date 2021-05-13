@@ -18,7 +18,7 @@ Universo Santa Tecla
       3.1.2. [Add Relation](#add-relation)  
 4. [Diseño](#diseño)  
    4.1. [Vista de Despliegue](#vista-de-despliegue)  
-   4.2. [Vista de Participantes](#vista-de-participantes)  
+   4.2. [Trazabilidad Analisis/Diseño](#trazabilidad-analisis/diseño)  
 
 ## Modelo del dominio  
   
@@ -155,5 +155,5 @@ add:
 ### Vista de despliegue  
 ![Deploy View](docs/diagrams/out/design/deployView.svg)  
 
-### Vista de participantes 
+### Trazabilidad Analisis/Diseño 
 ![Usecase Design](docs/diagrams/out/design/usecase_design.svg)  
