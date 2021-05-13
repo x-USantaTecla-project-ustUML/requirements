@@ -120,7 +120,7 @@ add:
     - class: myClass  
       members:  
         - member: private int attribute  
-        - member: public static method(Type param1, int param2)  
+        - member: public string method(Type param1, int param2)  
       relations:  
         - composition: AnotherClass  
         - aggregation: AnotherClass2  
