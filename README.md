@@ -115,18 +115,18 @@ referenced by:
 ### Ejemplos Comandos  
 *Package Context*  
 <pre>
-add:  
-  members:  
-    - class: myClass  
-      members:  
-        - member: private int attribute  
-        - member: public string method(Type param1, int param2)  
-      relations:  
-        - composition: AnotherClass  
-        - aggregation: AnotherClass2  
-    - package: myPackage  
-  relations:  
-    - use: anotherPackage  
+add:
+  members:
+    - class: myClass
+      members:
+        - member: private int attribute
+        - member: public string method(Type param1, int param2)
+      relations:
+        - composition: AnotherClass
+        - aggregation: AnotherClass2
+    - package: myPackage
+  relations:
+    - use: anotherPackage
 </pre>
 
 ## Requisitos  
