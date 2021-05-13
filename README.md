@@ -116,14 +116,14 @@ referenced by:
 *Package Context*  
 <pre>
 add:  
-   members:  
-      - class: myClass  
+  members:  
+    - class: myClass  
       members:  
-         - member: private int attribute  
-         - member: public static method(Type param1, int param2)  
+        - member: private int attribute  
+        - member: public static method(Type param1, int param2)  
       relations:  
-         - composition: AnotherClass  
-         - aggregation: AnotherClass2  
+        - composition: AnotherClass  
+        - aggregation: AnotherClass2  
     - package: myPackage  
   relations:  
     - use: anotherPackage  
