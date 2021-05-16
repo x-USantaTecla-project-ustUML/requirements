@@ -4,19 +4,44 @@ node client {
     component Browser
 }
 
-node server {
+node frontServer {
+    component front as "ust-uml:front"
     component Angular
-    component Spring
+    component pako
+    component yaml as "js-yaml"
+    component bootstrap
+    component jquery
+    component monaco as "ngx-monaco-editor"
+    component rxjs
 }
 
-node database {
+node backServer {
+    component back as "ust-uml:back"
+    component spring as "spring-boot"
+    component lombok
+    component jacoco
+}
+
+front .down.> Angular
+front .down.> pako
+front .down.> yaml
+front .down.> bootstrap
+front .down.> jquery
+front .down.> monaco
+front .down.> rxjs
+back .down.> spring
+back .down.> lombok
+back .down.> jacoco
+
+node databaseServer {
     component MongoDB
 }
 
-client -down- server: tcp/ip
-Browser -down- Spring: http
-Browser -down- Angular: http
-Spring -down- MongoDB: mongoDB
+client -down- backServer: tcp/ip
+client -down- frontServer: tcp/ip
+Browser -down- back: http
+Browser -down- front: http
+backServer -down- databaseServer: mongoDB
 @enduml
 
 @startuml usecase_design
