@@ -25,7 +25,6 @@ Universo Santa Tecla
 ![Modelo del dominio](docs/diagrams/out/domainModel/domainModel.svg)  
 
 ## Disciplina de Requisitos  
-
 ### Actores y Casos de uso  
 ![Casos de Uso](docs/diagrams/out/requirements/use_cases.svg)  
 
@@ -34,7 +33,6 @@ Universo Santa Tecla
 
 * * *
 ### Prototipo de interfaz  
-
 #### Interfaz
 ![Initial](docs/images/interfaz_INITIAL.PNG)  
 ![ON_MEMBER](docs/images/interfaz_ON_MEMBER.PNG)
