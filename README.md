@@ -6,16 +6,16 @@ Universo Santa Tecla
 
 1. [Modelo del dominio](#modelo-del-dominio)  
 2. [Disciplina de Requisitos](#disciplina-de-requisitos)  
-   2.1. [Actores y casos de uso](#actores-y-casos-de-uso)  
+   2.1. [Actores y casos de uso](#actores-y-casos-de-uso)   
    2.2. [Contexto](#contexto)  
    2.3. [Prototipo de Interfaz](#prototipo-de-interfaz)  
-   2.4. [Gramática del lenguaje](#gramática-del-lenguaje) 
-   2.5. [Semántica de comandos](#semántica-de-comandos) 
+   2.4. [Gramática del lenguaje](#gramática-del-lenguaje)  
+   2.5. [Semántica de comandos](#semántica-de-comandos)  
 3. [Disciplina de Analisis](#disciplina-de-análisis)  
-   3.1. [Arquitectura de análisis](#arquitectura-de-análisis) 
+   3.1. [Arquitectura de análisis](#arquitectura-de-análisis)  
    3.2. [Análisis de casos de uso](#análisis-de-casos-de-uso)  
-      3.2.1. [Add Member](#add-member)  
-      3.2.2. [Add Relation](#add-relation)  
+      - 3.2.1. [Add Member](#add-member)  
+      - 3.2.2. [Add Relation](#add-relation)  
 4. [Disciplina de Diseño](#disciplina-de-diseño)  
    4.1. [Arquitectura del sistema de diseño](#arquitectura-del-sistema-de-diseño)  
    4.2. [Diseño de casos de uso](#diseño-de-casos-de-uso)  
@@ -217,19 +217,28 @@ referenced by:
 
 *   [deleteCommand](#deleteCommand "deleteCommand")
 
+<a name="importCommand">importCommand:</a>
+
+![](docs/diagrams/out/domainModel/languageSintaxis/importCommand.png)<map name="importCommand.map"><area shape="rect" coords="119,1,229,33" href="#urlGitHubRepo" title="urlGitHubRepo"></map>
+
+
+referenced by:
+
+*   [UST_UML](#UST_UML "UST_UML")
+
 #### Semántica de comandos  
 * Todos los comandos desarrollados son autoexplicativos y estructurados 
 * Siguen una composicion sistemática
 
-*Comandos comunes*
+######  Comandos comunes
+~~~
+open: Member
+~~~
 
 ~~~
 close:
 ~~~
-
-~~~
-open: Member
-~~~
+###### Ingeniería directa
 
 *User account context*
 ~~~
@@ -350,6 +359,10 @@ delete:
   objects:
     - object: OBJECT
 ~~~  
+###### Ingeniería inversa
+~~~
+import: urlGitHubRepo
+~~~  
 * * *
 ## Disciplina de Análisis  
 ### Arquitectura de Análisis  
@@ -379,9 +392,13 @@ Poner ejemplos de patrones como el interprete en nuestro caso, con algún hipere
 
 Sonar, pruebas unitarias, sistema ...
 * Las tecnologías utilizadas en el desarrollo de las pruebas ha sido:
-  - Junit5
-  - Mockito
-  - Base de datos embebida para mongoDB    
+  - Back-end:
+    - Junit5
+    - Mockito
+    - Base de datos embebida para mongoDB  
+  - Front-end:
+    - Jasmine
+    - Karma  
 
 * El objetivo principal de las pruebas de ingeniería directa ha sido ejercitar los diferentes comandos del lenguaje en cada uno de los contextos, y así poder medir la calidad del software, validar que el sistema funciona como se espera y que los requisitos son implementados correctamente.    
 
