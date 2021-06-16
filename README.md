@@ -24,10 +24,23 @@ Universo Santa Tecla
   
 ![Modelo del dominio](docs/diagrams/out/domainModel/domainModel.svg)  
 
-### Lenguaje  
+## Disciplina de Requisitos  
 
-#### Sintaxis  
+### Actores y Casos de uso  
+![Casos de Uso](docs/diagrams/out/requirements/use_cases.svg)  
+
+### Contexto  
+![Contexto](docs/diagrams/out/requirements/context.svg)  
+
 * * *
+### Prototipo de interfaz  
+
+#### Interfaz
+![Initial](docs/images/interfaz_INITIAL.PNG)  
+![ON_MEMBER](docs/images/interfaz_ON_MEMBER.PNG)
+#### Gramática del lenguaje  
+
+##### Comando add
 <a name="UST_UML">UST_UML:</a>
 
 ![](docs/diagrams/out/domainModel/languageSintaxis/UST_UML.png)<map name="UST_UML.map"><area shape="rect" coords="49,1,157,33" href="#addCommand" title="addCommand"><area shape="rect" coords="49,45,161,77" href="#deleteComand" title="deleteComand"><area shape="rect" coords="49,89,175,121" href="#modifyCommand" title="modifyCommand"><area shape="rect" coords="49,133,165,165" href="#openCommand" title="openCommand"><area shape="rect" coords="49,177,165,209" href="#closeCommand" title="closeCommand"></map>
@@ -110,50 +123,176 @@ referenced by:
 *   [addCommand](#addCommand "addCommand")
 *   [class](#class "class")
 
-* * *
+#### Semántica de comandos  
+* Todos los comandos desarrollados son autoexplicativos y estructurados 
+* Siguen una composicion sistemática
 
-### Ejemplos Comandos  
-*Package Context*  
-<pre>
+*Comandos comunes*
+
+~~~
+close:
+~~~
+
+~~~
+open: Member
+~~~
+
+*User account context*
+~~~
 add:
   members:
-    - class: myClass
-      members:
-        - member: private int attribute
-        - member: public string method(Type param1, int param2)
-      relations:
-        - composition: AnotherClass
-        - aggregation: AnotherClass2
-    - package: myPackage
+    - project: Project1
+    - project: Project2
+      members: 
+        - package: package
+          members:
+            - class: class
+~~~
+
+~~~
+modify:
+  members:
+    - project: Project
+      set: NewProject
+~~~
+
+~~~
+delete:
+  members:
+    - project: Project 
+~~~
+  
+*Project & Package context*
+~~~
+add:
+    members:
+       - package: package
+       - class: class
+         modifiers: public abstract
+       - enum: enum
+       - interface: interface
+    relations:
+       - inheritance: Member
+         role: role
+       - composition: Member
+       - aggregation: Member
+         role: role
+       - association: Member
+       - use: Member
+~~~
+
+~~~
+modify:
+  members:
+    - class: Class
+      set: NewClass
   relations:
-    - use: anotherPackage
-</pre>
+    - inheritance: Member
+      set: NewMember
+      role: newRole
+~~~
 
-## Requisitos  
+~~~
+delete:
+  members:
+    - interface: Interface
+  relations:
+    - composition: Member 
+~~~
 
-### Actores y Casos de uso  
-![Casos de Uso](docs/diagrams/out/requirements/use_cases.svg)  
+*Class & Interface context*
+~~~
+add:
+    members:
+      - member: private static int attribute
+      - member: public abstract String method(int param1, String param2)
+    relations:
+      - association: Member 
+~~~
 
-### Contexto  
-![Contexto](docs/diagrams/out/requirements/context.svg)  
+~~~
+modify:
+  modifiers: package
+  set: public abstract
+  members:
+    - member: private static int attribute
+      set: public String newAttribute
+    - member: public abstract String method(int param1, String param2)
+      set: private int newMethod()
+  relations:
+    - use: Member
+      set: NewMember
+      role: newRole
+~~~
 
-### Prototipo de interfaz  
-![Initial](docs/images/interfaz_INITIAL.PNG)  
-![ON_MEMBER](docs/images/interfaz_ON_MEMBER.PNG)  
+~~~
+delete:
+  members:
+    - member: public String newAttribute
+    - member: private int newMethod()
+  relations:
+    - composition: Member 
+~~~
 
-## Analisis  
+*Enum context*
+
+* Adicional a los comandos de las clases y las interfaces
+
+~~~
+add:
+  objects:
+    - object: OBJECT
+~~~
+
+~~~
+modify:
+  objects:
+    - object: OBJECT
+      set: NEWOBJECT
+~~~
+
+~~~
+delete:
+  objects:
+    - object: OBJECT
+~~~  
+* * *
+## Disciplina de Análisis  
+### Arquitectura de Análisis  
 ![Analisis](docs/diagrams/out/analisis/analisis.svg)  
 
-### Add Member  
+### Análisis de casos de uso
+#### Add Member  
 ![Add Member](docs/diagrams/out/analisis/analisis_add_member.svg)  
 
-### Add Relation  
+#### Add Relation  
 ![Add Relation](docs/diagrams/out/analisis/analisis_add_relation.svg)  
- 
-## Diseño  
 
-### Vista de despliegue  
+* Debido a la sistematicidad ya comentada de los comandos no fue necesario seguir haciendo análisis para los distintos casos de uso de los comandos restantes.
+## Disciplina de Diseño  
+
+### Arquitectura del sistema de diseño
 ![Deploy View](docs/diagrams/out/design/deployView.svg)  
+### Diseño de casos de uso
+![Usecase Design](docs/diagrams/out/design/usecase_design.svg) 
 
-### Trazabilidad Analisis/Diseño 
-![Usecase Design](docs/diagrams/out/design/usecase_design.svg)  
+Explicar las tecnologías usadas y su estructuración
+
+Poner ejemplos de patrones como el interprete en nuestro caso, con algún hiperenlace al código y algún trozo de código
+
+## Disciplina de Pruebas 
+
+Sonar, pruebas unitarias, sistema ...
+* Las tecnologías utilizadas en el desarrollo de las pruebas ha sido:
+  - Junit5
+  - Mockito
+  - Base de datos embebida para mongoDB    
+
+* El objetivo principal de las pruebas de ingeniería directa ha sido ejercitar los diferentes comandos del lenguaje en cada uno de los contextos, y así poder medir la calidad del software, validar que el sistema funciona como se espera y que los requisitos son implementados correctamente.    
+
+* Para la realización de las pruebas en la parte de ingeniería inversa, se han ejercitado los parseadores con proyecto de prueba que contenía código que simula los distintos escenarios a tener en cuenta para la generación de los miembros y sus relaciones.  
+
+Imagen de sonar con el coverage del codigo
+## Disciplina de Despliegue  
+Despliegue, integración continua ...
+### Ecosistema
