@@ -4,7 +4,8 @@ Universo Santa Tecla
 
 **Índice**  
 
-1. [Modelo del dominio](#modelo-del-dominio)  
+1. [Objetivos](#objetivos)  
+   - 1.2. [Modelo del dominio](#modelo-del-dominio)  
 2. [Disciplina de Requisitos](#disciplina-de-requisitos)  
    2.1. [Actores y casos de uso](#actores-y-casos-de-uso)   
    2.2. [Contexto](#contexto)  
@@ -22,7 +23,26 @@ Universo Santa Tecla
 5. [Disciplina de Pruebas](#disciplina-de-pruebas)  
 6. [Disciplina de Despliegue](#disciplina-de-despliegue)  
 
-## Modelo del dominio  
+* * *
+
+## :white_check_mark: Objetivos
+ Los objetivos principales de este proyecto son, por un lado, aunar correctamente los diferentes conocimientos adquiridos a lo largo del Máster en Ingeniería Web y, por otro lado, facilitar la generación de documentación para los proyectos software. Los conocimientos utilizados a destacar serían los aprendidos en las asignaturas:
+- Ingeniería Web Visión General.
+- Arquitectura y Patrones para Aplicaciones Web.
+- Front-end para Navegadores Web.
+- Back-end con Tecnologías de Código Abierto.
+- Metodologías de desarrollo web.
+
+Para ello se desarrollará una aplicación web utilizando la metodología de desarrollo de software Rational Unified Process, el framework Spring para el desarrollo de la capa de negocio, el framework Angular para el desarrollo de la capa de presentación y MongoDB para la capa de datos.
+Añadir que otro objetivo importante es trabajar en equipo para así simular un proyecto real. Para ello, este proyecto se desarrollará conjuntamente con (Nombres de los demás) ampliando así sus funcionalidades como se puede ver en su TFM (Nombre TFM).  
+
+También nos hemos propuesto implementar el proyecto siguiendo una arquitectura hexagonal y los principios de código limpio como SOLID, evitar smell codes, etc. así como aplicar patrones de diseño que aumenten la extensibilidad y legibilidad del código.
+
+La aplicación web a desarrollar será USTUML, la cual consiste en permitir la generación efectiva de diagramas UML a través de ingeniería directa y de ingeniería inversa para así poder mejorar la gestión de cualquier proyecto software. La ingeniería directa se realizará mediante técnica declarativa, concretamente a través de la ejecución de comandos, y la ingeniería inversa a partir de código fuente en java, alojado en GitHub. 
+
+Se ha elegido el desarrollo de esta aplicación web debido a que nos planteaba un reto importante: la idea del proyecto venía dada por nuestro tutor, hecho que nos obligaba a interpretar sus ideas y transformarlas en algo tangible, como si de un cliente real se tratase. Esto desembocó en que el análisis contemplase un solo actor y diversos casos de uso que se especificarán posteriormente en este documento.
+
+### Modelo del dominio  
   
 ![Modelo del dominio](docs/diagrams/out/domainModel/domainModel.svg)  
 * * *
