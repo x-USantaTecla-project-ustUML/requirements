@@ -361,7 +361,7 @@ delete:
 ~~~  
 ###### Ingeniería inversa
 ~~~
-import: urlGitHubRepo
+import: urlGitHubRepository
 ~~~  
 * * *
 ## Disciplina de Análisis  
