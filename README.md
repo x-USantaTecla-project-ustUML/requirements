@@ -4,7 +4,7 @@ Universo Santa Tecla
 
 **Índice**  
 
-1. [Objetivos](#objetivos)  
+1. [Objetivos](#white_check_mark-objetivos)  
    - 1.2. [Modelo del dominio](#modelo-del-dominio)  
 2. [Disciplina de Requisitos](#disciplina-de-requisitos)  
    2.1. [Actores y casos de uso](#actores-y-casos-de-uso)   
