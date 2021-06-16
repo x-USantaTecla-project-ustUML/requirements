@@ -23,7 +23,7 @@ Universo Santa Tecla
 ## Modelo del dominio  
   
 ![Modelo del dominio](docs/diagrams/out/domainModel/domainModel.svg)  
-
+* * *
 ## Disciplina de Requisitos  
 ### Actores y Casos de uso  
 ![Casos de Uso](docs/diagrams/out/requirements/use_cases.svg)  
@@ -31,7 +31,6 @@ Universo Santa Tecla
 ### Contexto  
 ![Contexto](docs/diagrams/out/requirements/context.svg)  
 
-* * *
 ### Prototipo de interfaz  
 #### Interfaz
 ![Initial](docs/images/interfaz_INITIAL.PNG)  
@@ -267,6 +266,7 @@ delete:
 ![Add Relation](docs/diagrams/out/analisis/analisis_add_relation.svg)  
 
 * Debido a la sistematicidad ya comentada de los comandos no fue necesario seguir haciendo análisis para los distintos casos de uso de los comandos restantes.
+* * *
 ## Disciplina de Diseño  
 
 ### Arquitectura del sistema de diseño
@@ -277,7 +277,7 @@ delete:
 Explicar las tecnologías usadas y su estructuración
 
 Poner ejemplos de patrones como el interprete en nuestro caso, con algún hiperenlace al código y algún trozo de código
-
+* * *
 ## Disciplina de Pruebas 
 
 Sonar, pruebas unitarias, sistema ...
@@ -291,6 +291,7 @@ Sonar, pruebas unitarias, sistema ...
 * Para la realización de las pruebas en la parte de ingeniería inversa, se han ejercitado los parseadores con proyecto de prueba que contenía código que simula los distintos escenarios a tener en cuenta para la generación de los miembros y sus relaciones.  
 
 Imagen de sonar con el coverage del codigo
+* * *
 ## Disciplina de Despliegue  
 Despliegue, integración continua ...
 ### Ecosistema
