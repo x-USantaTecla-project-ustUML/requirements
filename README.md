@@ -380,6 +380,8 @@ delete:
     - object: OBJECT
 ~~~  
 ###### Ingeniería inversa
+
+*Account context*
 ~~~
 import: urlGitHubRepository
 ~~~  
