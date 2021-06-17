@@ -407,6 +407,25 @@ import: urlGitHubRepository
 Explicar las tecnologías usadas y su estructuración
 
 Poner ejemplos de patrones como el interprete en nuestro caso, con algún hiperenlace al código y algún trozo de código
+### Ingeniería Directa: Interpreters  
+Diagrama de Objetos del estado añadir clase a un paquete.
+![AddClass Interpreters Design](docs/diagrams/out/design/addClassInterpreters_design.svg) 
+
+[Carpeta Interpreters](https://github.com/USantaTecla-tool-ustUML/back-spring/tree/develop/src/main/java/com/usantatecla/ustumlserver/domain/services/interpreters)
+#### Código Add PackageInterpreter
+~~~
+@Override
+public void add(Command command) {
+        super.add(command);
+        Package pakage = (Package) this.member;
+        for (Command memberCommand : command.getCommands(Command.MEMBERS)) {
+            MemberParser memberParser = memberCommand.getMemberType().create();
+            pakage.add(memberParser.get(memberCommand));
+        }
+        this.addRelations(command);
+        this.member = this.packagePersistence.update(pakage);
+    }
+~~~
 * * *
 ## Disciplina de Pruebas 
 

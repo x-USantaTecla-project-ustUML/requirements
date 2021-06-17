@@ -103,3 +103,41 @@ XEntityJava ...up.>  XModel : <<trace>>
 XService ...down.>  XResourceJava : <<trace>>
 XModelJava ...up.>  XModel : <<trace>>
 @enduml
+
+@startuml addClassInterpreters_design
+object ":InterpretersStack" as InterpretersStack
+object ":AccountInterpreter" as AccountInterpreter
+object ":ProjectInterpreter" as ProjectInterpreter
+object ":PackageInterpreter" as PackageInterpreter
+
+InterpretersStack -down-> AccountInterpreter
+InterpretersStack -down-> ProjectInterpreter
+InterpretersStack -down-> PackageInterpreter
+
+object ":ClassParser" as ClassParser
+
+PackageInterpreter .down.> ClassParser
+
+object ":Account" as Account {
+    name = accaunt
+    email = name@email.com
+}
+object ":Project" as Project {
+    name = project
+}
+object ":Package" as Package {
+    name = package
+}
+object ":Class" as Class {
+    name = class
+}
+
+Account -down-> Project
+Project -down-> Package
+Package -down-> Class
+ClassParser .down.> Class
+
+AccountInterpreter -down-> Account
+ProjectInterpreter -down-> Project
+PackageInterpreter -down-> Package
+@enduml
