@@ -447,4 +447,7 @@ Imagen de sonar con el coverage del codigo
 * * *
 ## Disciplina de Despliegue  
 Despliegue, integración continua ...
+
+![Usecase Design](docs/diagrams/out/deploy/ecosystemDiagram.svg)  
+
 ### Ecosistema

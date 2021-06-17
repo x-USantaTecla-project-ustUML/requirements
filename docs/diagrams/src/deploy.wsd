@@ -1,0 +1,30 @@
+@startuml ecosystemDiagram
+
+node Firebase {
+    component front as "ust-uml:front"
+}
+
+node Heroku {
+    component back as "ust-uml:back"
+}
+
+node MongoDBAtlas {
+    component MongoDB
+}
+
+node SonarCloud {
+}
+
+node GitHub {
+      component GitActions
+      component "front-angular" as frontRepository
+      component "back-spring" as backRepository
+}
+
+back -down- MongoDB
+GitActions -down-> SonarCloud
+SonarCloud -down-> frontRepository
+SonarCloud -down-> backRepository
+GitActions -down-> Firebase
+GitActions -down-> Heroku
+@enduml
