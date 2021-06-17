@@ -426,6 +426,12 @@ public void add(Command command) {
         this.member = this.packagePersistence.update(pakage);
     }
 ~~~
+
+### Ingeniería Inversa: Arquitectura
+
+![AddClass Interpreters Design](docs/diagrams/out/design/reverseEngineering.svg)
+
+[Carpeta reverseEngineering](https://github.com/USantaTecla-tool-ustUML/back-spring/tree/develop/src/main/java/com/usantatecla/ustumlserver/domain/services/reverseEngineering)
 * * *
 ## Disciplina de Pruebas 
 
@@ -448,6 +454,7 @@ Imagen de sonar con el coverage del codigo
 ## Disciplina de Despliegue  
 Despliegue, integración continua ...
 
+### Ecosistema
+
 ![Usecase Design](docs/diagrams/out/deploy/ecosystemDiagram.svg)  
 
-### Ecosistema
