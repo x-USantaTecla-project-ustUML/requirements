@@ -103,3 +103,87 @@ XEntityJava ...up.>  XModel : <<trace>>
 XService ...down.>  XResourceJava : <<trace>>
 XModelJava ...up.>  XModel : <<trace>>
 @enduml
+
+@startuml reverseEngineering
+package "reverseEngineering" as 60cb13181378a01d58d76103 {
+  class "Directory" as 60cb13181378a01d58d76104 {
+      - file: File
+      + delete(): void
+      + getName(): String
+      + getPath(): String
+      + listFiles(): File[]
+      + getFile(): File
+    }
+  class "FileClassParser" as 60cb13181378a01d58d76105 {
+      - clazz: Class
+      + get(file: File): Class
+      + visit(declaration: ClassOrInterfaceDeclaration, arg: Void): void
+      + visit(declaration: EnumDeclaration, arg: Void): void
+      + visit(declaration: AnnotationDeclaration, arg: Void): void
+      - getAttributes(fields: List<FieldDeclaration>): List<Attribute>
+      - getMethods(methodDeclarations: List<MethodDeclaration>): List<Method>
+      - getModifiers(declarationModifiers: List<com.github.javaparser.ast.Modifier>): List<Modifier>
+    }
+  class "FileParser" as 60cb13181378a01d58d76106 {
+      # getCompilationUnit(file: File): CompilationUnit
+    }
+  class "FileRelationParser" as 60cb13181378a01d58d76107 {
+      - relations: List<Relation>
+      - useRelationsTargetNames: Set<String>
+      - imports: List<String>
+      - project: Project
+      - pakage: Package
+      - targetRoute: String
+      ~ get(project: Project, file: File): List<Relation>
+      - setPackageRoute(compilationUnit: CompilationUnit): void
+      + visit(declaration: ClassOrInterfaceDeclaration, arg: Void): void
+      + visit(declaration: EnumDeclaration, arg: Void): void
+      - addInheritanceRelations(targetDeclarations: List<ClassOrInterfaceType>): void
+      - getTarget(targetName: String): Member
+      - getImport(name: String): String
+      - getOutsideTarget(typeName: String): Member
+      - addRelations(declaration: TypeDeclaration<?>): void
+      - getVariables(declaration: TypeDeclaration<?>): List<VariableDeclarator>
+      - isInConstructorParams(variable: VariableDeclarator, constructors: List<ConstructorDeclaration>): boolean
+      - isInitialized(declaration: TypeDeclaration<?>, variable: VariableDeclarator): boolean
+      - addCompositionRelations(variable: VariableDeclarator): void
+      - getListType(type: Type): List<Type>
+      - addCompositionRelation(type: Type): void
+      - addAggregationRelations(targetTypes: List<Type>): void
+      - addAssociationRelation(type: Type): void
+      + visit(variable: VariableDeclarator, arg: Void): void
+      + visit(parameter: Parameter, arg: Void): void
+      + visit(object: ObjectCreationExpr, arg: Void): void
+      - addUseRelationsTargetNames(type: Type): void
+      - addUseRelations(): void
+      - isInRelations(targetName: String): boolean
+    }
+  class "GitCloner" as 60cb13181378a01d58d76108 {
+      - {static}  PATH: String
+      + clone(url: String, email: String): Directory
+    }
+  class "GitRepositoryImporter" as 60cb13181378a01d58d76109 {
+      - repositoryParser: RepositoryParser
+      + _import(url: String, email: String): Project
+    }
+  class "RepositoryParser" as 60cb13181378a01d58d7610a {
+      ~ {static}  PATH: String
+      ~ {static}  JAVA_EXTENSION: String
+      - packagePersistence: PackagePersistence
+      - classPersistence: ClassPersistence
+      - classMap: Map<File,Class>
+      ~ get(directory: Directory): Project
+      - parseDirectoryClasses(pakage: Package, directory: Directory): void
+      - parseDirectoryRelations(project: Project): void
+    }
+}
+60cb13181378a01d58d76105 -up-|> 60cb13181378a01d58d76106
+60cb13181378a01d58d76107 -up-|> 60cb13181378a01d58d76106
+60cb13181378a01d58d76108 .down.> 60cb13181378a01d58d76104
+60cb13181378a01d58d76109 -down-> 60cb13181378a01d58d7610a
+60cb13181378a01d58d76109 .down.> 60cb13181378a01d58d76108
+60cb13181378a01d58d76109 .down.> 60cb13181378a01d58d76104
+60cb13181378a01d58d7610a .down.> 60cb13181378a01d58d76105
+60cb13181378a01d58d7610a .down.> 60cb13181378a01d58d76104
+60cb13181378a01d58d7610a .down.> 60cb13181378a01d58d76107
+@enduml
