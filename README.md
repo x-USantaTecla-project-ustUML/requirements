@@ -410,7 +410,7 @@ import: urlGitHubRepository
 ![Usecase Design](docs/diagrams/out/design/usecase_design.svg) 
 
 ### Arquitectura Hexagonal
-En la capa de negocio se va seguir la arquitectura hexagonal, para así cumplir con el objetivo de extensibilidad del sistema.
+En la capa de negocio se va seguir la arquitectura hexagonal, para así cumplir con el objetivo de extensibilidad del sistema.  
 ![AddClass Interpreters Design](docs/diagrams/out/design/hexagonal.png) 
 
 ### Ingenieria Directa: Interpreters  
