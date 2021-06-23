@@ -21,8 +21,8 @@ Universo Santa Tecla
    4.1. [Arquitectura del sistema de diseño](#arquitectura-del-sistema-de-diseño)  
    4.2. [Diseño de casos de uso](#diseño-de-casos-de-uso)  
    4.3. [Arquitectura Hexagonal](#arquitectura-hexagonal)  
-   4.4. [Ingenieria Directa: Interpreters](#ingenieria-directa:-interpreters)  
-   4.5. [Ingenieria Inversa: Arquitectura](#ingenieria-inversa:-arquitectura)  
+   4.4. [Ingenieria Directa: Interpreters](#ingenieria-directa-interpreters)  
+   4.5. [Ingenieria Inversa: Arquitectura](#ingenieria-inversa-arquitectura)  
 5. [Disciplina de Pruebas](#disciplina-de-pruebas)  
 6. [Disciplina de Despliegue](#disciplina-de-despliegue)  
 
