@@ -406,9 +406,10 @@ import: urlGitHubRepository
 ### Diseño de casos de uso
 ![Usecase Design](docs/diagrams/out/design/usecase_design.svg) 
 
-Explicar las tecnologías usadas y su estructuración
+### Arquitectura Hexagonal
+En la capa de negocio se va seguir la arquitectura hexagonal, para así cumplir con el objetivo de extensibilidad del sistema.
+![AddClass Interpreters Design](docs/diagrams/out/design/hexagonal.png) 
 
-Poner ejemplos de patrones como el interprete en nuestro caso, con algún hiperenlace al código y algún trozo de código
 ### Ingeniería Directa: Interpreters  
 Diagrama de Objetos del estado añadir clase a un paquete.
 ![AddClass Interpreters Design](docs/diagrams/out/design/addClassInterpreters_design.svg) 
@@ -437,7 +438,6 @@ public void add(Command command) {
 * * *
 ## Disciplina de Pruebas 
 
-Sonar, pruebas unitarias, sistema ...
 * Las tecnologías utilizadas en el desarrollo de las pruebas ha sido:
   - Back-end:
     - Junit5
@@ -454,8 +454,6 @@ Sonar, pruebas unitarias, sistema ...
 Imagen de sonar con el coverage del codigo
 * * *
 ## Disciplina de Despliegue  
-Despliegue, integración continua ...
-
 ### Ecosistema
 
 ![Usecase Design](docs/diagrams/out/deploy/ecosystemDiagram.svg)  
