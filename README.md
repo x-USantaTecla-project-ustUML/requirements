@@ -20,6 +20,9 @@ Universo Santa Tecla
 4. [Disciplina de Diseño](#disciplina-de-diseño)  
    4.1. [Arquitectura del sistema de diseño](#arquitectura-del-sistema-de-diseño)  
    4.2. [Diseño de casos de uso](#diseño-de-casos-de-uso)  
+   4.3. [Arquitectura Hexagonal](#arquitectura-hexagonal)  
+   4.4. [Ingenieria Directa: Interpreters](#ingenieria-directa:-interpreters)  
+   4.5. [Ingenieria Inversa: Arquitectura](#ingenieria-inversa:-arquitectura)  
 5. [Disciplina de Pruebas](#disciplina-de-pruebas)  
 6. [Disciplina de Despliegue](#disciplina-de-despliegue)  
 
@@ -410,7 +413,7 @@ import: urlGitHubRepository
 En la capa de negocio se va seguir la arquitectura hexagonal, para así cumplir con el objetivo de extensibilidad del sistema.
 ![AddClass Interpreters Design](docs/diagrams/out/design/hexagonal.png) 
 
-### Ingeniería Directa: Interpreters  
+### Ingenieria Directa: Interpreters  
 Diagrama de Objetos del estado añadir clase a un paquete.
 ![AddClass Interpreters Design](docs/diagrams/out/design/addClassInterpreters_design.svg) 
 
@@ -430,7 +433,7 @@ public void add(Command command) {
     }
 ~~~
 
-### Ingeniería Inversa: Arquitectura
+### Ingenieria Inversa: Arquitectura
 
 ![AddClass Interpreters Design](docs/diagrams/out/design/reverseEngineering.svg)
 
