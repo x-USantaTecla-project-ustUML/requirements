@@ -453,8 +453,6 @@ public void add(Command command) {
 * El objetivo principal de las pruebas de ingeniería directa ha sido ejercitar los diferentes comandos del lenguaje en cada uno de los contextos, y así poder medir la calidad del software, validar que el sistema funciona como se espera y que los requisitos son implementados correctamente.    
 
 * Para la realización de las pruebas en la parte de ingeniería inversa, se han ejercitado los parseadores con proyecto de prueba que contenía código que simula los distintos escenarios a tener en cuenta para la generación de los miembros y sus relaciones.  
-
-Imagen de sonar con el coverage del codigo
 * * *
 ## Disciplina de Despliegue  
 ### Ecosistema
